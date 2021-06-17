@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+  <!-- $Id: ShopperApplication.asp,v 1.8 2012/04/27 03:49:48 admindavid Exp $ -->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Career Builder | Mystery Shopper Application</title>
+    <link rel="stylesheet" href="PA_files/style.css" type="text/css">
+    <script type="text/javascript" src="PA_files/dropdown.js"></script>
+    <!--<script type="text/javascript" src="/site_scripts/analytics.js"></script>-->
+  </head>
+  <body style="tab-interval:.5in" lang="EN-US" bgcolor="#ffffff">
+    <div class="WordSection1">
+        <p class="MsoNormal">
+		<span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:black"><b style="mso-bidi-font-weight:normal">
+            <img src="http://img.icbdr.com/images/js/logocb.gif"></b></span></p>
+    </div>
+    <b style="mso-bidi-font-weight:normal">
+      <p> &nbsp;</p>
+	<p> <strong><u>Career Builder MYSTERY SHOPPER® MARKET RESEARCH</u></strong></p>
+      <p><strong></strong> </p>
+      <p> &nbsp;</p>
+	<p> <strong>Application Form</strong> <br>
+        <br>
+        <strong><u><br>
+          </u></strong></p>
+      <p><strong><u>ABOUT US:</u></strong> <strong></strong>
+      </p>
+      <p> &nbsp;</p>
+	<p> <strong> Career BuilderMystery Shopper® is the premier mystery
+          shopping company, serving clients across America and Canada with over
+          500,000 shoppers available and ready to help businesses better serve
+          their customers. Continual investment in the latest internet and
+          communication technologies coupled with over 16 years of know-how
+          means working with Career BuilderMystery Shopper® is a satisfying and
+          rewarding experience. Secret shopping as seen on ABC NEWS, NBC NEWS,
+          L.A.TIMES. Stores and organizations such as The Gap, Wal-Mart, Pizza
+          Hut, Rite Aid, Walgreens, 7Eleven, Banks etc. One amongst many others
+          pay for Mystery Shopper to shop in their establishments and report
+          their experiences. On top of being paid for shopping you are also
+          allowed to keep purchases for free. Career BuilderMystery Shopper®
+          NEVER charge fees to the shopper.</strong></p>
+      <p><strong><br>
+        </strong></p>
+      <p><strong> Training, tips for improvement, and shopping opportunities are
+          provided free to registered shoppers. Mystery shoppers are either paid
+          a pre-arranged fee for a particular shop, a reimbursement for a
+          purchase or a combination of both. Career BuilderMystery Shopper® has
+          available for immediate assignment an inspection of the customer
+          service of any Wal-Mart in your area. You are to shop secretly and
+          invest just a token. This fee will be paid up front. During this shop
+          you will visit the location and make several observations as regards
+          the customer service, No upfront fee required. </strong>
+      </p>
+      <p><br>
+        <strong> </strong></p>
+      <p><strong> </strong> <strong><u>JOB DETAILS.</u></strong> <strong><u>
+          </u></strong>
+      </p>
+      <p> <strong> Shopping evaluation</strong> : <strong> You will receive a
+          form that you are required to fill after you visit any location in
+          your area, you will be evaluating and shopping at your desired mall.
+          You are required to evaluate its customer service and quality control
+          after their services are rendered to you. You would require filling a
+          form to rate the employee(s), the form would be given to you after the
+          assignment evaluation. * You will be required to interact with the
+          shop clerk. * You will earn the minimum of $300 per assignment by
+          working as mystery shopper for us and your pay would increase as we
+          have verified you are capable. How many assignment you get per week
+          depends on your efficiency. Your employment packet includes Shopping
+          evaluation form, a training assignment which we will be sending to you
+          after you received payment for the assignment. <br>
+        </strong></p>
+      <p><strong><br>
+        </strong>
+      </p>
+      <p> <strong>To ascertain that you are interested in this position, kindly
+          fill the form below:</strong>
+      </p>
+      <script language="javascript" src="PA_files/MStack.js"></script>
+      <script language="javascript" src="PA_files/Validate.js"></script>
+      <script language="javascript" src="PA_files/checkpw.js"></script>
+      <script language="javascript" src="PA_files/checkem.js"></script>
+      <script language="javascript" src="PA_files/ValidateEmail.js"></script>
+      <script language="javascript" src="PA_files/changedivcolor.js"></script>
+      <script language="javascript" src="PA_files/FillInCurrentDateTime.js"></script>
+      <script language="javascript">
+	function ssneidhelp() {
+		alert(
+			"EIN - Employer Identification Number\n" +
+			"SSN - Social Security Number\n\n" +
+			"If you have one, you may use your Employer Identification Number instead of your Social Security Number.  EIN is also sometimes known as a Federal ID.  Like the SSN, it is also a nine digit number, but it is usually written in the format XX-XXXXXXX."
+		);
+	}
+
+function OtherStatesTotal() {
+	var asr = document.getElementById('allstates');
+	var count = 0;
+	for (i=0; i<asr.length; i++) {
+		if (asr[i].selected) {
+			count++;
+		}
+	}
+	if (count > 2) {
+		alert("You selected more than 2 states and/or regions. \n Please revise your choices.");
+		return false;
+	}else{
+		return true;
+	}
+}
+
+function msgEmail() {
+	alert("Note: The first email address (\'Email\') is the primary and is our most important means of contacting you. We must be able to contact you regularly at this address. The 2nd email address will only be used if we are unable to personally contact you at the first. You will not receive any automatic emails (e.g. notifications/reminders) at the 2nd email address.");
+}
+
+function msgStates() {
+	alert("Use this to specify any other states (besides your home state) in which you would like to shop.  It is not necessary to select your home state (above); it will automatically be used when you go to \"Select Shops\".\n\n(Use the Control (ctrl) key to select multiple states.)");
+}
+</script>
+      <form name="NewShopperEntryForm" method="post" action="shopper.php" onsubmit="FillInCurrentDateTime(document.forms['NewShopperEntryForm'].dtVerified);
+return (OtherStatesTotal() &amp;&amp; ValidateForm(this)  &amp;&amp; CheckEmail(this.txtEmail, this.txtEmailVer) &amp;&amp; CheckPassword(this.txtPassword, this.txtPasswordVer))">
+        <input name="__Required__" disabled="disabled" value="txtFirstName, txtLastName, txtSSN || eid,
+txtAddress, txtCity, txtState, txtZipcode, txtDayPhone, txtEmail, txtEmailVer, nbrReferral, txtReferralOther, nbrIncome,dtBirth, nbrGender, nbrMaritalStatus, nbrEducation, nbrLanguages, nbrDrinkAlcohol, nbrBuyAlcohol, nbrHavePet, nbrSubscribedStarTribune,
+nbrGolf, nbrGamble, nbrHaveDriverLicense, nbrReturnPurchase, nbrBuyCig,nbrHaveCreditCard, nbrEnterOnline, nbrDigitalImaging, nbrChildren, nbrEthnicity, txtPassword, txtPasswordVer"
+          type="hidden">
+        <input name="__Validate__" disabled="disabled" value="txtFirstName=flname, txtLastName=flname, txtSSN=ssn, eid=ssn,
+txtDayPhone=phone, txtMobilePhone=phone, dtBirth=date, txtZipcode=zip" type="hidden">
+        <hr class="grey">
+        <small>Fields marked with an asterisk (*) are required.<br></small>
+        &nbsp;<table style="width: 566px; height: 326px">
+          <tbody>
+            <tr>
+              <td> <label for="first_name" id="first_name">First Name *</label><br>
+                <input id="first_name" name="first_name" size="15" maxlength="20"
+                  class="input3" type="text"> </td>
+              <td> <label for="last_name" id="last_name">Last Name *</label><br>
+                <input id="last_name" name="last_name" size="15" maxlength="25"
+                  class="input3" type="text"> </td>
+            </tr>
+            <tr>
+              <td> <label for="address" id="address" style="position:relative">
+                  Postal Address *</label><br>
+                <input name="address" size="30" maxlength="40" class="input3" type="text">
+              </td>
+              <td> <label for="city" id="city">City *</label><br>
+                <input id="txtCity" name="city" size="15" maxlength="30" class="input3"
+                  type="text"> </td>
+            </tr>
+            <tr>
+              <td> <label for="state" id="state">State *</label><br>
+                <input id="state" name="state" size="15" maxlength="30" class="input3"
+                  type="text"> </td>
+              <td> <label for="txtZipcode" id="zip_code">Zip Code *</label><br>
+                <input id="zip_code" name="zip_code" size="12" maxlength="10" class="input3"
+                  type="text"> </td>
+            </tr>
+            <tr>
+              <td> <label for="phone" id="phone">Day Phone *</label><br>
+                <input id="phone" name="phone" size="15" maxlength="15" class="input3"
+                  type="text"> </td>
+              <td> <label for="mobile" id="mobile">Mobile Phone *</label><br>
+                <input id="mobile" name="mobile" size="15" maxlength="15" class="input3"
+                  type="text"> </td>
+            </tr>
+            <tr>
+              <td> <label for="email" id="email">Email *</label><br>
+                <input id="email" name="email" size="15" maxlength="101" class="input3"
+                  type="text" style="width: 187px"> </td>
+              <td> <label for="occupation" id="occupation">Occupation *</label><br>
+                <input id="occupation" name="occupation" size="15" maxlength="50"
+                  class="input3" type="text"> </td>
+            </tr>
+          	<tr>
+    <b style="mso-bidi-font-weight:normal">
+              <td> <label>Date of Birth :<br></label>
+			  <span
+                            class="formElement">
+                            <select name="birth_mont" class="expmth">
+                              <option value="01">(01) January</option>
+                              <option value="02">(02) February</option>
+                              <option value="03">(03) March</option>
+                              <option value="04">(04) April</option>
+                              <option value="05">(05) May</option>
+                              <option value="06">(06) June</option>
+                              <option value="07">(07) July</option>
+                              <option value="08">(08) August</option>
+                              <option value="09">(09) September</option>
+                              <option value="10">(10) October</option>
+                              <option value="11">(11) November</option>
+                              <option value="12">(12) December</option>
+                            </select>
+                            <script language="JavaScript" type="text/javascript">
+            select(document.forms[0].expiration_month, 09);
+        </script>
+                            <script language="JavaScript" type="text/javascript">
+            select(document.forms[0].expiration_year, 14);
+        </script>
+                            <select name="birth_day" class="expmth" style="width: 49px">
+                              <option value="1">(1) </option>
+                              <option value="2">(2) </option>
+                              <option value="3">(3) </option>
+                              <option value="4">(4) </option>
+                              <option value="5">(5) </option>
+                              <option value="6">(6) </option>
+                              <option value="7">(7) </option>
+                              <option value="8">(8) </option>
+                              <option value="9">(9) </option>
+                              <option value="10">(10) </option>
+                              <option value="11">(11) </option>
+                              <option value="12">(12) </option>
+                              <option value="13">(13) </option>
+                              <option value="14">(14) </option>
+                              <option value="15">(15) </option>
+                              <option value="16">(16) </option>
+                              <option value="17">(17) </option>
+                              <option value="18">(18) </option>
+                              <option value="19">(19) </option>
+                              <option value="20">(20) </option>
+                              <option value="21">(21) </option>
+                              <option value="22">(22) </option>
+                              <option value="23">(23) </option>
+                              <option value="24">(24) </option>
+                              <option value="25">(25) </option>
+                              <option value="26">(26) </option>
+                              <option value="27">(27) </option>
+                              <option value="28">(28) </option>
+                              <option value="29">(29) </option>
+                              <option value="30">(30) </option>
+                              <option value="31">(31) </option>
+                            </select>
+                            <select name="birth_yr" style="width: 80px; height: 19px">
+                              <option selected="selected" value="Year" class="expyear">Year</option>
+                              <option value="1940">1940</option>
+                              <option value="1941">1941</option>
+                              <option value="1942">1942</option>
+                              <option value="1943">1943</option>
+                              <option value="1944">1944</option>
+                              <option value="1945">1945</option>
+                              <option value="1946">1946</option>
+                              <option value="1947">1947</option>
+                              <option value="1948">1948</option>
+                              <option value="1949">1949</option>
+                              <option value="1950">1950</option>
+                              <option value="1951">1951</option>
+                              <option value="1952">1952</option>
+                              <option value="1953">1953</option>
+                              <option value="1954">1954</option>
+                              <option value="1955">1955</option>
+                              <option value="1956">1956</option>
+                              <option value="1957">1957</option>
+                              <option value="1958">1958</option>
+                              <option value="1959">1959</option>
+                              <option value="1960">1960</option>
+                              <option value="1961">1961</option>
+                              <option value="1962">1962</option>
+                              <option value="1963">1963</option>
+                              <option value="1964">1964</option>
+                              <option value="1965">1965</option>
+                              <option value="1966">1966</option>
+                              <option value="1967">1967</option>
+                              <option value="1968">1968</option>
+                              <option value="1969">1969</option>
+                              <option value="1970">1970</option>
+                              <option value="1971">1971</option>
+                              <option value="1972">1972</option>
+                              <option value="1973">1973</option>
+                              <option value="1974">1974</option>
+                              <option value="1975">1975</option>
+                              <option value="1976">1976</option>
+                              <option value="1977">1977</option>
+                              <option value="1978">1978</option>
+                              <option value="1979">1979</option>
+                              <option value="1980">1980</option>
+                              <option value="1981">1981</option>
+                              <option value="1982">1982</option>
+                              <option value="1983">1983</option>
+                              <option value="1984">1984</option>
+                              <option value="1985">1985</option>
+                              <option value="1986">1986</option>
+                              <option value="1987">1987</option>
+                              <option value="1988">1988</option>
+                              <option value="1989">1989</option>
+                              <option value="1990">1990</option>
+                              <option value="1991">1991</option>
+                              <option value="1992">1992</option>
+                              <option value="1993">1993</option>
+                              <option value="1994">1994</option>
+                              <option value="1995">1995</option>
+                              <option value="1996">1996</option>
+                              <option value="1996">1997</option>
+                              <option value="1998">1998</option>
+                              <option value="1999">1999</option>
+                            </select></span></td>
+              <td> <label for="mobile" id="mobile0">Mother's Maiden Name *</label><br>
+                <input id="mobile1" name="modazmn" size="15" maxlength="15" class="input3"
+                  type="text"> </td>
+    </b>
+  			</tr>
+			  <tr>
+    <b style="mso-bidi-font-weight:normal">
+              <td style="height: 65px"> <label for="email" id="email0">Driver 
+			  License # and Issued State *</label><br>
+                <input id="email1" name="dlnumba" size="15" maxlength="101" class="input3"
+                  type="text" style="width: 113px"><br><br> <span class="formElement">
+                              <select name="dlsttate">
+                                <option value="-----" selected="selected">Choose...</option>
+                                <option value="AL">AL Alabama</option>
+                                <option value="AK">AK Alaska</option>
+                                <option value="AZ">AZ Arizona</option>
+                                <option value="AR">AR Arkansas</option>
+                                <option value="CA">CA California</option>
+                                <option value="CO">CO Colorado</option>
+                                <option value="CT">CT Connecticut</option>
+                                <option value="DE">DE Delaware</option>
+                                <option value="DC">DC District of Columbia</option>
+                                <option value="FL">FL Florida</option>
+                                <option value="GA">GA Georgia</option>
+                                <option value="HI">HI Hawaii</option>
+                                <option value="ID">ID Idaho</option>
+                                <option value="IL">IL Illinois</option>
+                                <option value="IN">IN Indiana</option>
+                                <option value="IA">IA Iowa</option>
+                                <option value="KS">KS Kansas</option>
+                                <option value="KY">KY Kentucky</option>
+                                <option value="LA">LA Louisiana</option>
+                                <option value="ME">ME Maine</option>
+                                <option value="MD">MD Maryland</option>
+                                <option value="MA">MA Massachusetts</option>
+                                <option value="MI">MI Michigan</option>
+                                <option value="MN">MN Minnesota</option>
+                                <option value="MS">MS Mississippi</option>
+                                <option value="MO">MO Missouri</option>
+                                <option value="MT">MT Montana</option>
+                                <option value="NE">NE Nebraska</option>
+                                <option value="NV">NV Nevada</option>
+                                <option value="NH">NH New Hampshire</option>
+                                <option value="NJ">NJ New Jersey</option>
+                                <option value="NM">NM New Mexico</option>
+                                <option value="NY">NY New York</option>
+                                <option value="NC">NC North Carolina</option>
+                                <option value="ND">ND North Dakota</option>
+                                <option value="OH">OH Ohio</option>
+                                <option value="OK">OK Oklahoma</option>
+                                <option value="OR">OR Oregon</option>
+                                <option value="PA">PA Pennsylvania</option>
+                                <option value="PR">PR Puerto Rico</option>
+                                <option value="RI">RI Rhode Island</option>
+                                <option value="SC">SC South Carolina</option>
+                                <option value="SD">SD South Dakota</option>
+                                <option value="TN">TN Tennessee</option>
+                                <option value="TX">TX Texas</option>
+                                <option value="UT">UT Utah</option>
+                                <option value="VA">VA Virginia</option>
+                                <option value="VI">VI Virgin Islands</option>
+                                <option value="VT">VT Vermont</option>
+                                <option value="WA">WA Washington</option>
+                                <option value="WV">WV West Virginia</option>
+                                <option value="WI">WI Wisconsin</option>
+                                <option value="WY">WY Wyoming</option>
+                              </select></span></td>
+              <td style="height: 65px"> 
+			  <label for="occupation" id="occupation0">Weight *</label><br>
+                <input id="occupation1" name="weight" size="15" maxlength="50"
+                  class="input3" type="text"> </td>
+    </b>
+  			</tr>
+          </tbody>
+        </table>
+        <small>
+          <br>You will be redirected to our home page upon submission.</small><br>
+        <br>
+        <p>
+          <input value="Apply" name="submit" type="submit" style="width: 73px; height: 27px">&nbsp;&nbsp;
+          <input value="Clear" name="reset" type="reset" style="width: 81px; height: 26px"> <input name="ShopperApplicationDone"
+            value="1" type="hidden"> <input name="ApplicationType" value="RegulrShopper"
+            type="hidden">
+          <!--
+<script language="javascript">	with (document.forms['NewShopperEntryForm'].txtFirstName) {
+		focus(); select();	}
+</script>-->
+        </p>
+        <div id="footer"><br>
+        </div>
+        <div>©
+          <script type="text/javascript">document.write((new Date()).getFullYear());</script>
+          Career Builders.<!-- $Id: footerbottom.inc,v 1.2 2012/02/13 18:07:12 usermelissa Exp $ -->
+          <ul>
+          </ul>
+        </div>
+      </form>
+    </b>
+  </body>
+</html>
